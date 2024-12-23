@@ -107,4 +107,7 @@ header .emblem {
 }
 .counter li a::before {
   content: "0" counter(menu) " ";
+}
+.counter li a::before li li a::before {
+  content: counters(menu, ".") " ";
 }/*# sourceMappingURL=style.css.map */
