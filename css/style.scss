@@ -21,6 +21,19 @@ header {
   .emblem {position: absolute; top: -70px; left: 15px; width: 176px; height: 196px;}
 }//end:header
 
+/*.sns*/
+.sns {
+  float: right; padding: 28px 11px 11px; border-left: 1px solid #ddd;
+  li {display: inline-block;}
+  a {width: 24px; height: 24px;}
+  .fb {background-position: 0 -609px;}
+  .fb:hover {background-position: 0 -633px;}
+  .tw {background-position: 0 -561px;}
+  .tw:hover {background-position: 0 -585px;}
+  .rss {background-position: 0 -513px;}
+  .rss:hover {background-position: 0 -537px;}
+}//end.sns
+
 /*#gnb*/
 #gnb {
   float: right; font-size: 22px; line-height: 40px;
@@ -46,3 +59,16 @@ header {
   li a::before {content: "0"counter(menu)" ";}
   li li a::before {content: counters(menu,".")" ";}
 }//end:.counter
+
+/*#language*/
+#language {
+  position: absolute; right: 0; bottom: 0; background: $main1;
+  font: 14px/46px "Arial"; font-weight: bold; color: #eea79e;
+  padding: 0 20px; border-radius: 2px 0 0;
+  li {display: inline-block;}
+  li::after {content:" / "; padding: 0 2px;}
+  li:last-child::after {display: none;}
+  a {color: #fff; border-bottom: 1px solid transparent; transition: all .2s ease-in-out;
+    display: inline; padding-bottom: 2px;}
+  a:hover, a.active {border-color: #fff;}
+}//end:#language
