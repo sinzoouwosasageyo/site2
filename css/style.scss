@@ -43,7 +43,6 @@ header {
 .counter {
   ul {counter-reset: menu;}   //menu 라는 카운터를 생성함.
   li {counter-increment: menu;}   //li 마다 menu 카운터를 1씩 증가
-  li a::before {content: "0"counter(menu)" ";
+  li a::before {content: "0"counter(menu)" ";}
   li li a::before {content: counters(menu,".")" ";}
-  }
 }//end:.counter
